@@ -7,7 +7,7 @@ import './Header.css';
 
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
-
+  console.log(basket);
   return (
     <div className='header'>
       <Link to='/'>
@@ -38,7 +38,7 @@ function Header() {
         <Link to='/checkout'>
           <div className='header__optionBasket'>
             <ShoppingBasketIcon />
-            <span className='header__basketCount'>{basket.length}</span>
+            <span className='header__basketCount'>{basket?.length}</span>
           </div>
         </Link>
       </div>
