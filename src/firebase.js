@@ -1,10 +1,18 @@
+import firebase from 'firebase';
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyCTuH5jjXpEPffdrR9WkLKqeJaZ5vvszjE',
-  authDomain: 'e-commerce-website-62fd8.firebaseapp.com',
-  databaseURL: 'https://e-commerce-website-62fd8.firebaseio.com',
-  projectId: 'e-commerce-website-62fd8',
-  storageBucket: 'e-commerce-website-62fd8.appspot.com',
-  messagingSenderId: '1033887137208',
-  appId: '1:1033887137208:web:1ee9b884336583bc5d634d',
-  measurementId: 'G-E4R0QJHWYB'
+  apiKey: 'AIzaSyA8JVlyJVd0K3drRvjHqehkZGvmrJCpLo4',
+  authDomain: 'clone-12ef3.firebaseapp.com',
+  databaseURL: 'https://clone-12ef3.firebaseio.com',
+  projectId: 'clone-12ef3',
+  storageBucket: 'clone-12ef3.appspot.com',
+  messagingSenderId: '787854163699',
+  appId: '1:787854163699:web:881574350bfaddef014186',
+  measurementId: 'G-924W8B15H0'
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+const auth = firebase.auth();
+export { db, auth };
